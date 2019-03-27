@@ -1,0 +1,7 @@
+{
+  "permissions": [
+    "*://developer.mozilla.org/*",
+    "webRequest",
+    "bookmarks"
+  ]
+}

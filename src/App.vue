@@ -12,5 +12,6 @@
 </script>
 
 <style scoped lang="stylus">
-
+#app
+  min-width 600px
 </style>

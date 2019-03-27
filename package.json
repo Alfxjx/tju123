@@ -25,5 +25,10 @@
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "permissions": [
+    "*://developer.mozilla.org/*",
+    "webRequest",
+    "bookmarks"
+  ]
 }

@@ -1,4 +1,5 @@
 import Vue from 'vue'
-import {DatePicker} from 'element-ui'
+import {DatePicker, ColorPicker} from 'element-ui'
 
 Vue.use(DatePicker)
+Vue.use(ColorPicker)
