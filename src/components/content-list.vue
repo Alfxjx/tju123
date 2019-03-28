@@ -1,17 +1,14 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div class="root">
   </div>
 </template>
 
-<script>
-
+<script type="text/ecmascript-6">
   export default {
-    name: 'app'
+    name: "content-list"
   }
 </script>
 
 <style scoped lang="stylus">
-  #app
-    min-width 600px
+
 </style>
