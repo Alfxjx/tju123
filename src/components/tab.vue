@@ -107,9 +107,12 @@
         })
       },
       changeLocale() {
-        let locale = this.$i18n.locale
-        locale === 'zh' ? this.$i18n.locale = 'en' : this.$i18n.locale = 'zh'
-        LangStorage.setLang(this.$i18n.locale) // 后面会用做切换和将用户习惯存储到本地浏览器
+        this.$store.commit('changeLocale')
+        console.log(this.$store.state.local)
+        this.$i18n.locale = this.$store.state.local
+        // let locale = this.$i18n.locale
+        // locale === 'zh' ? this.$i18n.locale = 'en' : this.$i18n.locale = 'zh'
+        LangStorage.setLang(this.$store.state.local) // 后面会用做切换和将用户习惯存储到本地浏览器
       }
     }
   }

@@ -7,7 +7,7 @@
     </ul>
     <div class="side-bar">
       <ul class="card">
-        <li v-for="value in $t('main')" :key="value.name">{{value.name}}</li>
+        <li v-for="value in $t('main')" :key="value.name" class="card-item">{{value.name}}</li>
       </ul>
     </div>
     <content-list class="temp"></content-list>
@@ -49,6 +49,16 @@
         margin-bottom 0.3rem
     .side-bar
       padding 0.5rem
+      margin-right 50px
       border 1px solid #f3f5f7
       box-shadow 0px 2px 2px rgb(121, 121, 121)
+      .card
+        .card-item
+          line-height 25px
+          vertical-align center
+          text-align center
+          margin-bottom 6px
+          border-bottom 1px solid grey
+          &:last-child
+            border-bottom none
 </style>
