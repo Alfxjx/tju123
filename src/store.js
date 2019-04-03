@@ -13,7 +13,10 @@ export default new Vuex.Store({
       i18n.t('main.course.sub'),
       i18n.t('main.office.sub'),
       i18n.t('main.research.sub')
-    ]
+    ],
+    canEdit: false,
+    showUserLink: false,
+    userLink: []
   },
   mutations: {
     toBsColor(state) {
@@ -23,6 +26,18 @@ export default new Vuex.Store({
     },
     changeLocale(state) {
       state.local === 'zh' ? state.local = 'en' : state.local = 'zh'
+    },
+    switchEdit(state) {
+      state.canEdit = !state.canEdit
+    },
+    showUserLink(state) {
+      state.showUserLink = true
+    },
+    addToUser(state, payload) {
+      state.userLink.push(payload)
+    },
+    delEdit(state, payload) {
+      // TODO
     }
   },
   actions: {}

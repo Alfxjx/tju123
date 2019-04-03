@@ -49,7 +49,7 @@
         margin-bottom 0.3rem
     .side-bar
       padding 0.5rem
-      margin-right 50px
+      margin-right 30px
       border 1px solid #f3f5f7
       box-shadow 0px 2px 2px rgb(121, 121, 121)
       .card

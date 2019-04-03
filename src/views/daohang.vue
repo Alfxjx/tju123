@@ -1,7 +1,7 @@
 <template>
   <div>
     <tab></tab>
-    <search></search>
+    <search class="search"></search>
     <main-view></main-view>
   </div>
 </template>
@@ -20,5 +20,6 @@
 </script>
 
 <style scoped lang="stylus">
-
+  .search
+    margin-top 5rem
 </style>
