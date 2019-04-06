@@ -38,6 +38,13 @@ export default new Vuex.Store({
     },
     delEdit(state, payload) {
       // TODO
+      let pos = 0
+      for (let i = 0; i < state.userLink.length; i++) {
+        if (state.userLink[i].name === payload.name) {
+          pos = i
+        }
+      }
+      state.userLink.splice(pos, 1)
     }
   },
   actions: {}

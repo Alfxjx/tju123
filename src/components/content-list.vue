@@ -6,7 +6,7 @@
       </div>
       <ul class="user" v-if="showUserLink">
         <li v-for="(uItem,index) in userLink" v-bind:key="index" class="user-item">
-          <div class="edit-del" v-if="canEdit" :style="{backgroundColor: baseColor}" @click="del">
+          <div class="edit-del" v-if="canEdit" :style="{backgroundColor: baseColor}" @click="del(uItem.name)">
             <span>-</span>
           </div>
           <a :href="uItem.link">{{uItem.name}}</a>
@@ -46,12 +46,11 @@
       edit() {
         this.$store.commit('switchEdit')
       },
-      del() {
-        console.log('deleted')
+      del(uName) {
         this.$store.commit('delEdit', {
-          name: this.name,
-          link: this.link
+          name: uName
         })
+        console.log('deleted')
       }
     },
     components: {
