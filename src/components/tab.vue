@@ -63,7 +63,7 @@
     },
     computed: {
       base() {
-        return this.$store.state.baseColor ? this.$store.state.baseColor : '#1DC3F5'
+        return this.$store.state.baseColor ? this.$store.state.baseColor : '#22658c'
       },
       month() {
         return `${this.date.getMonth() + 1}月`
@@ -121,12 +121,15 @@
 <style scoped lang="stylus">
   .tab-wrapper
     position fixed
+    z-index 100
     top 0
     width 100%
     height 3rem
     display flex
     align-items center
-    box-shadow 0rem 0.1rem 0.3rem rgba(121, 121, 121, 0.5)
+    box-shadow 0 1px 1px 1px rgba(121, 121, 121, 0.2)
+    &:hover
+      box-shadow 0 3px 1px 1px rgba(121, 121, 121, 0.2)
     .tab-list
       width 100%
       display flex
@@ -142,7 +145,7 @@
         display flex
         flex-direction row
         .li-title
-          font-weight 700
+          font-weight 600
       .li-mid
         display flex
         flex-direction row

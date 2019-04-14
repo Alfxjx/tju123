@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    baseColor: '#1DC3F5',
+    baseColor: '#22658c',
     local: i18n.locale,
     lists: [
       i18n.t('main.school.sub'),
@@ -21,7 +21,7 @@ export default new Vuex.Store({
   mutations: {
     toBsColor(state) {
       if (state.baseColor === '') {
-        state.baseColor = '#1DC3F5'
+        state.baseColor = '#22658c'
       }
     },
     changeLocale(state) {

@@ -20,13 +20,18 @@
 
 <style scoped lang="stylus">
   .wrapper
+    background white
     display flex
     flex-direction row
     flex-wrap wrap
+    max-width 80%
     padding 20px
-    margin-left 20px
+    margin-left auto
+    margin-right auto
     margin-bottom 20px
-    box-shadow 0 0 3px 3px rgba(0, 0, 0, 0.2)
+    box-shadow 0 1px 1px 1px rgba(121,121,121, 0.2)
+    &:hover
+      box-shadow 1px 1px 2px 1px rgba(121,121,121, 0.2)
     .innerList
       font-size 18px
       font-weight 500

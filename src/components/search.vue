@@ -29,7 +29,11 @@
       },
       inputWidth() {
         let width = document.body.clientWidth * 0.8
-        return `${width - 96}px`
+        if(width > 600) {
+          return `${width - 130}px`
+        } else {
+          return `${width}px`
+        }
       }
     }
   }
@@ -41,14 +45,20 @@
     display flex
     justify-content center
     height $size
-    margin 1rem 10%
+    margin 1rem 0
+    min-width 100%
     .search
       display flex
       flex-direction row
       justify-content space-between
       align-items center
+      &:hover
+        border-top 5px solid #22658c
+        border-bottom 5px solid #22658c
+        border-radius 0.25rem
       .input-search
         height 45px
+        padding-left 1rem
       .btn-search
         display flex
         justify-content center
