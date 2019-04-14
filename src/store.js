@@ -12,7 +12,13 @@ export default new Vuex.Store({
       i18n.t('main.school.sub'),
       i18n.t('main.course.sub'),
       i18n.t('main.office.sub'),
-      i18n.t('main.research.sub')
+      i18n.t('main.research.sub'),
+      i18n.t('main.exam.sub'),
+      i18n.t('main.party.sub'),
+      i18n.t('main.scholarship.sub'),
+      i18n.t('main.daily.sub'),
+      i18n.t('main.activity.sub'),
+      i18n.t('main.career.sub')
     ],
     canEdit: false,
     showUserLink: false,

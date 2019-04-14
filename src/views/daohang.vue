@@ -5,6 +5,7 @@
       <search class="search"></search>
       <main-view></main-view>
     </div>
+    <top></top>
     <stick></stick>
   </div>
 </template>
@@ -14,11 +15,12 @@
   import mainView from '../components/main-view'
   import search from '../components/search'
   import stick from '../components/stick'
+  import top from '../components/top'
 
   export default {
     name: 'daohang',
     components: {
-      tab, mainView, search, stick
+      tab, mainView, search, stick, top
     }
   }
 </script>
