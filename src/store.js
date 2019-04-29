@@ -22,7 +22,8 @@ export default new Vuex.Store({
     ],
     canEdit: false,
     showUserLink: false,
-    userLink: []
+    userLink: [],
+    showPage: 0
   },
   mutations: {
     toBsColor(state) {
@@ -51,6 +52,9 @@ export default new Vuex.Store({
         }
       }
       state.userLink.splice(pos, 1)
+    },
+    changeShowPage(state, payload) {
+      state.showPage = payload
     }
   },
   actions: {}
